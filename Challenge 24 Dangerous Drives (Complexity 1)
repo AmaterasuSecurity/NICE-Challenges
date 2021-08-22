@@ -1,0 +1,63 @@
+![efd1293d84d53ec4c4e499b1abaf5232.png](:/dc1131e319b3459e8f6df6b5b21a4d2f)
+
+![6f1f22c2fcd2dc9f61ba5b7b51187e91.png](:/d90c72f3aa064ae590b49e0ae5411d28)
+
+Dangerous Drives
+Author: Brendan Higgins
+Framework Category: Investigate
+Specialty Area: Digital Forensics
+Work Role: Law Enforcement/CounterIntelligence Forensics
+Task Description: Perform virus scanning on digital media. (T0285)
+Scenario
+A USB thumb drive of unknown origin or owner has been found in the office. I need you to check and verify that the thumb drive does not contain any malicious software that could infect and damage the company's valuable data.
+
+Additional Information
+More details and objectives about this challenge will be introduced during the challenge meeting, which will start once you begin deploying the challenge.
+
+You will be able to check your progress during this challenge using the check panel within the workspace once the challenge is deployed. The checks within the check panel report on the state of some or all of the required tasks within the challenge.
+
+Once you have completed the requested tasks, you will need to document the methodology you used with as much detail and professionalism as necessary. This should be done on the documentation tab within the workspace once the challenge is deployed. Below the main documentation section be sure to include a tagged list of applications you used to complete the challenge.
+
+Your username/password to access all virtual machines and services within the workspace will be the following...
+Username: playerone
+Password: password123
+
+Meeting Notes
+
+Sergio Chanel
+Hey, tech guys, I found a thumb drive on the second floor near the HR area. I don't know whose it is and I don't really care either. I'm going to come drop it off later today because I'm sure you have more use for it than I do
+
+Gilly Bates
+I ran into Sergio in the halls and he handed me a random flash drive with little explanation but he said he made a ticket for it.
+
+Anyways, I put it on your desk to look at, @playerone
+
+Thanh Akasaka
+@playerone, we have no idea where that drive came from, but it could be infected with viruses. I've heard from some forums I frequent that a lot of other sysadmins are trying to figure out the best way to stop USB drives from walking in the door and being plugged in by curious folks that inadvertently infect the whole company! Anyways, we're lucky that Sergio turned it in rather than rummaged through it's contents. Since he found it near HR it could just belong to someone there, but we can't be too sure, right? Its been plugged into Workstation-Desk we have set up as a sheep-dip, you can find it there. Make sure not to just delete the whole drive or entire directories because even if infected, it could also have some critical HR files on it. I think we have some sort of Antivirus on that workstation called Clam Scan or something that can scan removable media. Go check it out @playerone.
+
+Richard LeGrand
+I GUESS ITS LIKE THEY SAY - CURIOSITY KILLS THE CAT! HAHAHA
+NOT FUNNY THOUGH YOU GUYS NEED TO CHECK THAT OUT.
+
+Thanh Akasaka
+I also noticed that the sheep-dip Workstation-Desk machine has been acting a bit weird when trying to open programs, no idea what happened there but I don't have time to look at it. So good luck.
+
+
+
+![22844a49269dc473c16af55857349a5b.png](:/4640419211e34a1e992c2eedb2bc93cc)
+
+![6d3f7a3b72078016c1f4152a8e5dc2c2.png](:/1db124f8f9c046dfb0e46132e601ddec)
+
+
+![2e7b998623b4579a47014a561ddb52f3.png](:/b65f6cd9ee63420dab17d726a3bfb02e)
+
+![e17c92694f9676d4a0f716c41e44c5fe.png](:/3647e87843a54343a9cc11b2ba9894db)
+
+![b43a1c7527ae9df464e26d1f45c5d0a5.png](:/6d1337b90ec041af83e1a63e7ba07bab)
+
+![7b4e291abca265a0a86f2cd637575c29.png](:/af0fec072368447da6fd924e9da14a42)
+
+Documentation:
+According to the notes, they mentioned the machine has been funky ever since plugging in the thumbdrive. Upon investigation it seems like files has been locked down. It looks like regular user functions were disabled. So, I tried running the scanner as administrator and it was able to execute. After the scan results were provided I went into the thumbdrive and removed each file that showed were infected.
+
+According to the Scan summary there are 4 infected files found on the drive. The remediating steps done was to locate where the files were and deleted it off the system. I used SHIFT + DELETE to permanently delete. The regular delete function doesn't remove it completely, it sends it to the recycle bin which is still located locally on the system.
