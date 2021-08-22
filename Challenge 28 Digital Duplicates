@@ -1,0 +1,124 @@
+# Challenge Info
+
+* * *
+
+Task Description: Create a forensically sound duplicate of the evidence (i.e., forensic image) that ensures the original evidence is not unintentionally modified, to use for data recovery and analysis processes. This includes, but is not limited to, hard drives, floppy diskettes, CDs, PDAs, mobile phones, GPS, and all tape formats. (T0048)
+
+\[6:32 PM\]
+
+NICE Framework KSA
+
+K0017. Knowledge of concepts and practices of processing digital forensic data.
+
+K0021. Knowledge of data backup and recovery.
+
+K0042. Knowledge of incident response and handling methodologies.
+
+K0060. Knowledge of operating systems.
+
+K0117. Knowledge of file system implementations (e.g., New Technology File System \[NTFS\], File Allocation Table \[FAT\], File Extension \[EXT\]).
+
+K0118. Knowledge of processes for seizing and preserving digital evidence.
+
+K0122. Knowledge of investigative implications of hardware, Operating Systems, and network technologies.
+
+K0132. Knowledge of which system files (e.g., log files, registry files, configuration files) contain relevant information and where to find those system files.
+
+K0133. Knowledge of types of digital forensics data and how to recognize them.
+
+K0304. Knowledge of concepts and practices of processing digital forensic data.
+
+S0047. Skill in preserving evidence integrity according to standard operating procedures or national standards.
+
+S0065. Skill in identifying and extracting data of forensic interest in diverse media (i.e., media forensics).
+
+S0067. Skill in identifying, modifying, and manipulating applicable system components within Windows, Unix, or Linux (e.g., passwords, user accounts, files).
+
+S0073. Skill in using virtual machines. (e.g., Microsoft Hyper-V, VMWare vSphere, Citrix XenDesktop/Server, Amazon Elastic Compute Cloud, etc.).
+
+S0089. Skill in one-way hash functions (e.g., Secure Hash Algorithm \[SHA\], Message Digest Algorithm \[MD5\]).
+
+\*\*Framework Category:\*\*Investigate
+\*\*Specialty Area:\*\*Digital Forensics
+\*\*Work Role:\*\*Law Enforcement/CounterIntelligence Forensics
+\*\*Task Description:\*\*Create a forensically sound duplicate of the evidence (i.e., forensic image) that ensures the original evidence is not unintentionally modified, to use for data recovery and analysis processes. This includes, but is not limited to, hard drives, floppy diskettes, CDs, PDAs, mobile phones, GPS, and all tape formats. (T0048)
+**Scenario**
+
+Recently Gary Thatcher our senior system administrator, came across a thumb drive attached to an employee's system. According to the employee, the thumb drive was attached without their consent and they are unsure of the origin of said drive. The drive was passed to Ione Leventis one of our security analysts. Ione has attached the drive to our sheep-dip system which in our case is the Security-Desk machine. However, Ione was called away on other matters and you are now entrusted with the task. According to current company policy the thumb drive must be inspected for any malicious agents that could threaten DAS Web's overall security. Your job is to create a forensically sound duplicate image of the thumb drive using dcfldd so it can be examined without the risk of inadvertently modifying potential evidence. SHA512 hashes should also be taken and compared between the original thumb drive which is already attached, but not mounted, to the system and the forensic image.
+
+**Additional Information**
+
+More details and objectives about this challenge will be introduced during the challenge meeting, which will start once you begin deploying the challenge.
+You will be able to check your progress during this challenge using the check panel within the workspace once the challenge is deployed. The checks within the check panel report on the state of some or all of the required tasks within the challenge.
+Once you have completed the requested tasks, you will need to document the methodology you used with as much detail and professionalism as necessary. This should be done on the documentation tab within the workspace once the challenge is deployed. Below the main documentation section be sure to include a tagged list of applications you used to complete the challenge.
+Your username/password to access all virtual machines and services within the workspace will be the following...
+Username: playerone
+Password: password123
+
+### Meeting Notes
+
+* * *
+
+- [Gary Thatcher](https://portal.nice-challenge.com/workspace)
+    
+    Greetings @playerone, recently I discovered a thumb drive attached to the system of an employee who will remain nameless. This is a violation of our company IT security policy. Per company policy, a forensically sound duplicate of this drive must be made in case we need to inspect it later to determine whether it is of a malicious nature and whether or not we need to get legal involved. I have assigned this task to you and I will of course check your work. Ione has further details.
+    
+- ![Ione Leventis](file:///C:/Users/Alvin/.config/joplin-desktop/resources/30604a1038e842bdbbc3bc44e341dcec.configjoplindesktopt)
+    
+    [Ione Leventis](https://portal.nice-challenge.com/workspace)
+    
+    I can't believe I have to do another one of these... Oh hi @playerone. Gary Thatcher has me doing his work again so you will need to take care of this. The thumb drive that was found has been attached to our sheep-dip machine which is currently the Security-Desk machine, however it is not mounted.
+    
+- ![Gilly Bates](file:///C:/Users/Alvin/.config/joplin-desktop/resources/06563a567e714dd3bbe52104317d18f0.configjoplindesktopt)
+    
+    [Gilly Bates](https://portal.nice-challenge.com/workspace)
+    
+    @playerone I had to do this for a drive that we found on company property once and it turns out it was our CEO's Richard LeGrand's drive I won't mention what was on it but suffice it to say, good luck...
+    
+- ![Richard LeGrand](file:///C:/Users/Alvin/.config/joplin-desktop/resources/a6710b4692aa493498c0ac108dd10325.configjoplindesktopt)
+    
+    [Richard LeGrand](https://portal.nice-challenge.com/workspace)
+    
+    YES GILLY THAT WOULD BE BEST
+    
+- ![Ione Leventis](file:///C:/Users/Alvin/.config/joplin-desktop/resources/30604a1038e842bdbbc3bc44e341dcec.configjoplindesktopt)
+    
+    [Ione Leventis](https://portal.nice-challenge.com/workspace)
+    
+    @playerone, you can ignore them, but obviously confidentiality is of paramount importance in this task. You will need to make a forensic duplicate of the thumb drive using the forensic utility dcfldd and the image should be stored in /forensicimages. A SHA512 hash should be taken of both the drive and of the image /forensicimages/forensicimage.dd that you will create with dcfldd and the two should be compared to one another. It's critical that these hashes match so we can be certain of the integrity of the potential evidence.
+    
+- ![Ione Leventis](file:///C:/Users/Alvin/.config/joplin-desktop/resources/30604a1038e842bdbbc3bc44e341dcec.configjoplindesktopt)
+    
+    [Ione Leventis](https://portal.nice-challenge.com/workspace)
+    
+    @playerone In summary you must:
+    1\. Use dcfldd to make a forensically sound image and hash of the thumb drive
+    2\. Store the image in /forensicimages/forensicimage.dd
+    3\. Take a SHA512 hash of the thumb drive and compare it to the hash originally created with dcfldd.
+    
+
+### Network Map
+
+![396ea84862a204a2796809160e2d2162.png](file:///C:/Users/Alvin/.config/joplin-desktop/resources/601ae624866748ec93c9f63516aff1d2.png)
+
+* * *
+
+### Notes:
+
+1\. Check man pages for info on the dcfldd command.
+
+2\. Info on dcfldd command: The if option tells dcfldd to use the specified file instead of stdin. The of option writes to the file instead of stdout. Hash option sets the specified hash format. Hashlog send the hashoutput to a file instead of stderr.
+
+3\. Checked the directory listings with the ls command using the options -lha. The l is a lower cased "L" character not a one which  shows file or directory, size, modified date and time, file or folder name and owner of files and the permissions. Adding the "h" option shows the listings in human readable format and the "a" option shows hidden directories and files. So, with this information i used the command on the directory /dev and piped it to grep any directories or files with "sd" in it.
+
+![004369f7f07799ddc5bae23e9fff9c27.png](file:///C:/Users/Alvin/.config/joplin-desktop/resources/4c96487df7294af8bc7496d4bc10fb6f.png)
+
+4\. Changed to the root directory and created a directory named forensicimages as stated in meeting notes: commands used cd / sudo mkdir /forensicimages
+
+5\. Ran the command sudo dcfldd if=/dev/sdb of=/forensicimages/forensicimage.dd hash=sha512 hashlog=/forensicimages/forensicimage.txt (This command will create the image of the target directory which is /dev/sdb to the assigned directory which is /forensicimages and name the image forensicimages.dd. We are setting the hash format to sha512 and outputting the hashing information to a txt file in the /forensicimages folder named forensicimages.txt)
+
+6\. Once, the image is made I used sudo dcfldd if=/dev/sdb vf=/forensicimages/forensicimage.dd verifylog=/forensicimages/forensicimage.txt
+
+![82d0c3651dcaf9485ee0d24db5e73e13.png](file:///C:/Users/Alvin/.config/joplin-desktop/resources/2787864f11ab4a5aadb65f34af83d2c3.png)
+
+* * *
