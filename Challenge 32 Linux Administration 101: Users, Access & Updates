@@ -6,39 +6,32 @@
     
     @playerone our Sr. Admin Gary Thatcher needs a user account created on the production box.
     
-- ![Thanh Akasaka](file:///C:/Users/Alvin/.config/joplin-desktop/resources/d50660cfe071488aa2cc260aa6058647.configjoplindesktopt)
     
     [Thanh Akasaka](https://portal.nice-challenge.com/workspace)
     
     Don't forget about the account naming scheme: (First initial and last name, i.e. John Doe = jdoe)
     Password should be "Password123"
     
-- ![Thanh Akasaka](file:///C:/Users/Alvin/.config/joplin-desktop/resources/d50660cfe071488aa2cc260aa6058647.configjoplindesktopt)
     
     [Thanh Akasaka](https://portal.nice-challenge.com/workspace)
     
     The new server is at the IP address 172.16.10.7. It's also listed in the network diagram in the prod subnet.
     
-- ![Gilly Bates](file:///C:/Users/Alvin/.config/joplin-desktop/resources/87bfbfbfacc942b6b00ffabd895d3023.configjoplindesktopt)
     
     [Gilly Bates](https://portal.nice-challenge.com/workspace)
     
     Gary is going to need permanent SUDO / Administrator privileges.
     
-- ![Thanh Akasaka](file:///C:/Users/Alvin/.config/joplin-desktop/resources/d50660cfe071488aa2cc260aa6058647.configjoplindesktopt)
-    
+
     [Thanh Akasaka](https://portal.nice-challenge.com/workspace)
     
     Oh, and run updates on that box. It has been a while since that version of the OS was released and there are lots of updates for the base packages. Also, make sure to use the preinstalled system package manager when you update, no built from source updates please...
     
-- ![Richard LeGrand](file:///C:/Users/Alvin/.config/joplin-desktop/resources/d2c739e6903341f58e404d835025a84d.configjoplindesktopt)
     
     [Richard LeGrand](https://portal.nice-challenge.com/workspace)
     
     HEY PLAYERONE, I KNOW YOU'RE NEW AND ALL....
     THIS SHOULD BE DONE ALREADY- I HAVE A GOLF GAME TO GET TO.
-    
-- ![Gilly Bates](file:///C:/Users/Alvin/.config/joplin-desktop/resources/87bfbfbfacc942b6b00ffabd895d3023.configjoplindesktopt)
     
     [Gilly Bates](https://portal.nice-challenge.com/workspace)
     
