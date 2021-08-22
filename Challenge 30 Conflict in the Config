@@ -1,0 +1,81 @@
+Conflict in the Config
+Author: Alexander Hillock
+Framework Category: Protect and Defend
+Specialty Area: Cybersecurity Defense Infrastructure Support
+Work Role: Cyber Defense Infrastructure Support Specialist
+Task Description: Identify potential conflicts with implementation of any cyber defense tools (e.g., tool and signature testing and optimization). (T0483)
+Scenario
+We have had reports that our website has been slowing down during peak hours and aren't sure what is causing the performance drop. Your job is to identify what is causing the issue and remediate it as quickly as possible.
+
+Additional Information
+More details and objectives about this challenge will be introduced during the challenge meeting, which will start once you begin deploying the challenge.
+
+You will be able to check your progress during this challenge using the check panel within the workspace once the challenge is deployed. The checks within the check panel report on the state of some or all of the required tasks within the challenge.
+
+Once you have completed the requested tasks, you will need to document the methodology you used with as much detail and professionalism as necessary. This should be done on the documentation tab within the workspace once the challenge is deployed. Below the main documentation section be sure to include a tagged list of applications you used to complete the challenge.
+
+Your username/password to access all virtual machines and services within the workspace will be the following...
+Username: playerone
+Password: password123
+
+The username/password used to access the Firewall's web interface within the workspace will be the following...
+Username: admin
+Password: password123
+
+* * *
+
+Jacqueline Smith
+Jacqueline Smith
+Who can I talk to regarding an issue with the company website?
+
+Ricardo Cortes
+Ricardo Cortes
+I'm pretty sure @asteele would be the person to talk to about that.
+
+Ashley Steele
+Ashley Steele
+Hey, @jsmith, what seems to be the problem?
+
+Jacqueline Smith
+Jacqueline Smith
+I've had multiple customers complain about having to come into the store because they were unable to make purchases online due to extremely long load times.
+
+Ricardo Cortes
+Ricardo Cortes
+That's pretty concerning. Is there anything else the customers have shared with you?
+
+Jacqueline Smith
+Jacqueline Smith
+Just that the issue seems to be exacerbated during peak hours.
+
+Ricardo Cortes
+Ricardo Cortes
+@asteele, are you available to work on this right now?
+
+Ashley Steele
+Ashley Steele
+Actually, no. I'm pretty swamped with implementing that new ticketing system that the support staff is so eager for.
+
+Ricardo Cortes
+Ricardo Cortes
+Do you know of anyone else that might have the knowledge to investigate the situation?
+
+Ashley Steele
+Ashley Steele
+@playerone should have no problem taking this on. How about it, @playerone? Check out what's running on Prod-Joomla. There has to be some process that's running inefficiently or something.
+
+Jacqueline Smith
+Jacqueline Smith
+That sounds great. Please hurry and figure out what's causing the website to be so sluggish during peak hours. Time is money!
+
+* * *
+
+![7e3d0b20f959f447f52b99563bfb3dbf.png](file:///C:/Users/Alvin/.config/joplin-desktop/resources/1bde600cb8134e2da811e71224bc743e.png)
+
+* * *
+
+1.  Went into the webgui of pfsense and looked through configurations specifically the rule sections.
+2.  ssh'd into joomla through the CLI. Using playerone credentials.
+3.  CD into /etc/snort/rule then nano the custom.rule file
+4.  Saw a test rule in there that says it needs to be removed.
+5.  commented out the rule, saved the changes, and restarted the firewall rules with systemctl restart snort command.
