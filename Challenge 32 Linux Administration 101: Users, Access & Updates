@@ -82,3 +82,21 @@ Then I entered the command **sudo yum install *base **to update the base files
 To grant superuser access to Gary. I entered the command **sudo visudo** that took me into the vim file where the sudoers are listed. I went down to the bottom of the file and pressed **a **which puts me into insertion mode that will let me input data into the file. I then entered Gary's username which is gthatcher with the options **ALL=(ALL) PASSWD: ALL. **
 
 To save the changes I pressed **:wq **then enter. That tells vim to saved written changes in the file.
+
+# NICE Framework KSA
+K0088. Knowledge of systems administration concepts.
+K0158. Knowledge of organizational information technology (IT) user security policies (e.g., account creation, password rules, access control).
+K0167. Knowledge of system administration, network, and operating system hardening techniques.
+K0318. Knowledge of operating system command-line tools.
+S0016. Skill in configuring and optimizing software.
+S0143. Skill in conducting system/server planning, management, and maintenance.
+S0144. Skill in correcting physical and technical problems that impact system/server performance.
+S0153. Skill in identifying and anticipating system/server performance, availability, capacity, or configuration problems.
+S0154. Skill in installing system and component upgrades. (i.e., servers, appliances, network devices).
+S0158. Skill in operating system administration. (e.g., account maintenance, data backups, maintain system performance, install and configure new hardware/software).
+
+# CAE Knowledge Units
+Cybersecurity Foundations
+IT Systems Components
+Linux System Administration
+Operating Systems Concepts
